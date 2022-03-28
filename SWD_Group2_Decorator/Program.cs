@@ -18,4 +18,7 @@ ImprovedStereoDecorator stereoDecorator = new ImprovedStereoDecorator(tireTypeDe
 double cost5 = stereoDecorator.getCost();
 string cost6 = stereoDecorator.getCarModel();
 
+PremiumArmrestDecorator premiumArmrestDecorator = new PremiumArmrestDecorator(stereoDecorator, 12345);
+double cost7 = premiumArmrestDecorator.getCost();
+string test6 = premiumArmrestDecorator.getCarModel();
 Console.WriteLine("Done");
