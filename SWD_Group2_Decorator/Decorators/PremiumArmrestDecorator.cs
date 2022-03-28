@@ -8,7 +8,7 @@ namespace SWD_Group2_Decorator.Decorators
 {
     class PremiumArmrestDecorator : Decorator
     {
-        double _addedPrice;
+        private double _addedPrice;
         public PremiumArmrestDecorator(Car car, double addedPrice) : base(car)
         {
             this._addedPrice = addedPrice;

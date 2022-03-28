@@ -8,7 +8,7 @@ namespace SWD_Group2_Decorator
 {
     class SeatHeatingDecorator : Decorator
     {
-        double _addedPrice;
+        private double _addedPrice;
         public SeatHeatingDecorator(Car car, double addedPrice) : base(car)
         {
             this._addedPrice = addedPrice;

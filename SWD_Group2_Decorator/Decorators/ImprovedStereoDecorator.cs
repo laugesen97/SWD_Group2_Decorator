@@ -8,7 +8,7 @@ namespace SWD_Group2_Decorator.Decorators
 {
     class ImprovedStereoDecorator : Decorator
     {
-        double _addedPrice;
+        private double _addedPrice;
         public ImprovedStereoDecorator(Car car, double AddedPrice) : base(car)
         {
             _addedPrice = AddedPrice;

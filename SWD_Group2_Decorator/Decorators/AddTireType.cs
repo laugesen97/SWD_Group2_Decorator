@@ -8,26 +8,26 @@ namespace SWD_Group2_Decorator
 {
     class AddTireType : Decorator
     {
-        double Multiplier;
+        private double _multiplier;
         public AddTireType(Car car, string TireType) : base(car)
         {
             if (TireType.ToLower() == "soft")
             {
-                Multiplier = 1.1;
+                _multiplier = 1.1;
             }
             if (TireType.ToLower() == "medium")
             {
-                Multiplier = 1;
+                _multiplier = 1;
             }
             if (TireType.ToLower() == "hard")
             {
-                Multiplier = 0.9;
+                _multiplier = 0.9;
             }
         }
 
         public override double calculateTopSpeed()
         {
-            return base.calculateTopSpeed() * Multiplier;
+            return base.calculateTopSpeed() * _multiplier;
         }
 
         public override string getCarModel()
