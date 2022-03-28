@@ -25,16 +25,16 @@ namespace SWD_Group2_Decorator
             }
         }
 
-        public double calculateTopSpeed()
+        public override double calculateTopSpeed()
         {
             return base.calculateTopSpeed() * _multiplier;
         }
 
-        public string getCarModel()
+        public override string getCarModel()
         {
             return base.getCarModel() + " med ekstra hestekræfter";
         }
-        public double getCost()
+        public override double getCost()
         {
             return base.getCost();
         }
