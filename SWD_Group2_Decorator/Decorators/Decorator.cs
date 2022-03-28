@@ -18,7 +18,7 @@ namespace SWD_Group2_Decorator
             this._car = car;
         }
 
-        public override string getCarModel()
+        public virtual string getCarModel()
         {
             if (this._car != null)
             {
@@ -29,7 +29,7 @@ namespace SWD_Group2_Decorator
                 return String.Empty;
             }
         }
-        public override double calculateTopSpeed()
+        public virtual double calculateTopSpeed()
         {
             if (this._car != null)
             {
@@ -40,7 +40,7 @@ namespace SWD_Group2_Decorator
                 return 0;
             }
         }
-        public override double getCost()
+        public virtual double getCost()
         {
             if (this._car != null)
             {

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SWD_Group2_Decorator
 {
-    public abstract class Car
+    public interface Car
     {
-        public abstract string getCarModel();
-        public abstract double calculateTopSpeed();
-        public abstract double getCost();
+        public string getCarModel();
+        public double calculateTopSpeed();
+        public double getCost();
     }
 }

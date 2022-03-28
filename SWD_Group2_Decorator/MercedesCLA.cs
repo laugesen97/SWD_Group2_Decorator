@@ -11,16 +11,16 @@ namespace SWD_Group2_Decorator
         public string Model { get; set; }
         public double HorsePower { get; set; }
         public double Cost { get; set; }
-        public override double calculateTopSpeed()
+        public double calculateTopSpeed()
         {
             return HorsePower * 12;
         }
 
-        public override string getCarModel()
+        public string getCarModel()
         {
             return Model;
         }
-        public override double getCost()
+        public double getCost()
         {
             return Cost;
         }
