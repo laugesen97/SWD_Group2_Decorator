@@ -20,36 +20,20 @@ namespace SWD_Group2_Decorator
 
         public virtual string getCarModel()
         {
-            if (this._car != null)
-            {
-                return this._car.getCarModel();
-            }
-            else
-            {
-                return String.Empty;
-            }
+            if (this._car != null) return this._car.getCarModel();   
+            else return String.Empty;
+           
         }
         public virtual double calculateTopSpeed()
         {
-            if (this._car != null)
-            {
-                return this._car.calculateTopSpeed();
-            }
-            else
-            {
-                return 0;
-            }
+            if (this._car != null) return this._car.calculateTopSpeed();
+            else return 0;
+           
         }
         public virtual double getCost()
         {
-            if (this._car != null)
-            {
-                return this._car.getCost();
-            }
-            else
-            {
-                return 0;
-            }
+            if (this._car != null) return this._car.getCost();
+            else return 0;
         }
     }
 }

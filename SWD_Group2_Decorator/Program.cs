@@ -53,7 +53,7 @@ Console.WriteLine("-------------------------------------------------------------
 
 PremiumArmrestDecorator CombinedCar = new PremiumArmrestDecorator(new SeatHeatingDecorator(new AddTireType(new ImprovedStereoDecorator(new MercedesCLA
 {
-    HorsePower = 60,
+    HorsePower = 40,
     Cost = 1899999,
     Model = "Test2Model"
 }, 12000), "soft"), 5999), 10000);
