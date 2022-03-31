@@ -51,4 +51,14 @@ Console.WriteLine("Pris: " + ArmrestDecoratorCost);
 Console.WriteLine("Topfart: " +premiumArmrestDecorator.calculateTopSpeed());
 Console.WriteLine("----------------------------------------------------------------");
 
+PremiumArmrestDecorator CombinedCar = new PremiumArmrestDecorator(new SeatHeatingDecorator(new AddTireType(new ImprovedStereoDecorator(new MercedesCLA
+{
+    HorsePower = 60,
+    Cost = 1899999,
+    Model = "Test2Model"
+}, 12000), "soft"), 5999), 10000);
+Console.WriteLine(CombinedCar.getCarModel());
+Console.WriteLine("Pris: "+CombinedCar.getCost());
+Console.WriteLine("Topfart: " + CombinedCar.calculateTopSpeed());
+
 Console.ReadLine();
